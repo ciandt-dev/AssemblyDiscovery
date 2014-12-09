@@ -124,6 +124,12 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ManyConsole">
+      <HintPath>..\..\packages\ManyConsole.0.4.2.17\lib\ManyConsole.dll</HintPath>
+    </Reference>
+    <Reference Include="NDesk.Options">
+      <HintPath>..\..\packages\NDesk.Options.0.2.1\lib\NDesk.Options.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -146,6 +152,7 @@
       <DependentUpon>AssemblyDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="AssemblyDiscoveryService.cs" />
+    <Compile Include="ConsoleCommands\ExportConsoleCommand.cs" />
     <Compile Include="Services\AssemblyValidationResultSummary.cs" />
     <Compile Include="Services\ValidatorDefinitions.cs" />
     <Compile Include="AssemblyTO.cs" />
@@ -184,6 +191,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="helpindex.ico" />
@@ -216,6 +224,7 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

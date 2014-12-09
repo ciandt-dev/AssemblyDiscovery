@@ -5,10 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using AssemblyDiscovery.ConsoleCommands;
 using AssemblyDiscovery.OutputTemplates;
 using AssemblyDiscovery.Extensions;
 using System.Xml.Linq;
 using AssemblyDiscovery.Services;
+using ManyConsole;
 
 namespace AssemblyDiscovery
 {
@@ -32,27 +34,39 @@ namespace AssemblyDiscovery
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        //[STAThread]
+        //static void Main(string[] args)
+        //{
+
+
+        //    if (hasArgument(args, "o"))
+        //    {
+        //        processExportReportArgument(args);
+        //    }
+        //    else if (hasArgument(args, "v"))
+        //    {
+        //        processValidationArgument(args);
+        //    }
+        //    else if (hasArgument(args, "rve"))
+        //    {
+        //        processReferenceValidationExportArgument(args);
+        //    }
+        //    else
+        //    {
+        //        Application.EnableVisualStyles();
+        //        Application.SetCompatibleTextRenderingDefault(false);
+        //        Application.Run(new FormPrincipal(getInputAssemblyArgument(args)));
+        //    }
+        //}
+
         [STAThread]
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
-            if (hasArgument(args, "o"))
-            {
-                processExportReportArgument(args);
-            }
-            else if (hasArgument(args, "v"))
-            {
-                processValidationArgument(args);
-            }
-            else if (hasArgument(args, "rve"))
-            {
-                processReferenceValidationExportArgument(args);
-            }
-            else
-            {
-                Application.EnableVisualStyles();
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new FormPrincipal(getInputAssemblyArgument(args)));
-            }
+            var mainConsoleCommand = new MainConsoleCommand();
+
+            mainConsoleCommand.Options.WriteOptionDescriptions(Console.Out);
+
+            return mainConsoleCommand.Run(args);
         }
 
         private static void exportAssemblyDiscoveryReport(string[] args, string inputAssembly, string outPath, string outputArgParam)
