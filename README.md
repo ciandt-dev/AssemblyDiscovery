@@ -1,7 +1,7 @@
 AssemblyDiscovery
 =================
 
-CI Environment: https://ci.appveyor.com/project/patrinhani-ciandt/assemblydiscovery
+CI Environment: [![Build status](https://ci.appveyor.com/api/projects/status/gxedpwf45fnrrxln?svg=true)](https://ci.appveyor.com/project/patrinhani-ciandt/assemblydiscovery)
 
 NuGet Feed: https://www.myget.org/F/bohriumnet/
 
