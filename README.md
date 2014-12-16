@@ -1,9 +1,8 @@
 AssemblyDiscovery
 =================
 
-CI Environment: [![Build status](https://ci.appveyor.com/api/projects/status/gxedpwf45fnrrxln?svg=true)](https://ci.appveyor.com/project/patrinhani-ciandt/assemblydiscovery)
-
-NuGet Feed: https://www.myget.org/F/bohriumnet/
+[![AppVeyor](http://img.shields.io/appveyor/ci/patrinhani-ciandt/assemblydiscovery.svg?style=flat-square)](https://ci.appveyor.com/project/patrinhani-ciandt/assemblydiscovery)
+[![MyGet](http://img.shields.io/myget/bohriumnet/v/AssemblyDiscovery.svg?style=flat-square&label=AssemblyDiscovery)](https://www.myget.org/F/bohriumnet/)
 
 <h1>Usage Examples</h1>
 
