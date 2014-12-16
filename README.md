@@ -2,6 +2,7 @@ AssemblyDiscovery
 =================
 
 [![AppVeyor](http://img.shields.io/appveyor/ci/patrinhani-ciandt/assemblydiscovery.svg?style=flat-square)](https://ci.appveyor.com/project/patrinhani-ciandt/assemblydiscovery)
+[![GitHub](http://img.shields.io/github/issues/patrinhani-ciandt/AssemblyDiscovery.svg?style=flat-square)](https://huboard.com/patrinhani-ciandt/AssemblyDiscovery)
 [![MyGet](http://img.shields.io/myget/bohriumnet/v/AssemblyDiscovery.svg?style=flat-square&label=AssemblyDiscovery)](https://www.myget.org/F/bohriumnet/)
 
 <h1>Usage Examples</h1>
